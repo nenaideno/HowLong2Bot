@@ -35,9 +35,9 @@ client.on("message", (channel, tags, message, self) => {
 
     switch (message.toLowerCase()) {
         case "!walkthrough":
-            instance.get(`/channels?broadcaster_id=${process.env.channel2name}`).then(response => {
+            instance.get(`/channels?broadcaster_id=${process.env.channel2id}`).then(response => {
                 response.data && hltbService.search(response.data.data[0].game_name).then(result => {
-                    client.say(channel, `@${tags.username}, Примерное время прохождения ${result[0].name} - ${result[0].gameplayMain} часа(ов)`);
+                    client.say(channel, `@${tags.username}, Approximate passage time of ${result[0].name} - ${result[0].gameplayMain} hours`);
                 });
             })
             break;
