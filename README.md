@@ -7,6 +7,13 @@
 # About 
 This small chat bot for Twitch, with the help of commands in the chat provides an opportunity to find out the approximate time required to pass the game specified in the category of the current broadcast
 
+# Technology Stack
+1. **JS**
+2. **Axios** *(1.3.4)*
+3. **tmi.js** *(1.8.5)*
+4. **OAuth 2.0** *(To authorize on dev.twitch.tv)*
+
+
 # Current commands
 <b style='font-size: 18px;'>!walkthrough</b> - Show the passing time of the game specified in the broadcast category
 
